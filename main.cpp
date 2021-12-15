@@ -36,6 +36,8 @@ int main() {
     MyArrayTemp<Persona> ap(5);
     ap[0] = Persona("Ugo");
     ap[1] = Persona("Maria");
-    cout << ap[1] << endl;
+    //out << ap[1] << endl;
+
+    cout << ap << endl;
 
 } 
