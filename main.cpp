@@ -1,5 +1,6 @@
 #include <iostream>
 #include "persona.h"
+#include "array.h"
 using namespace std;
 
 //al posoto di fare questo
@@ -21,4 +22,9 @@ int main() {
     Persona p1("Gianni");
     Persona p2("Elisa");
     cout << massimo(p1, p2) << endl;
+
+    MyArray a1(5);
+    a1.init();
+    a1[13] = 6;
+    cout << a1[17] << endl;
 } 

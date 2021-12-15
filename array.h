@@ -15,11 +15,18 @@ class MyArray{
             m = new int[dim];
         }
         ~MyArray(){
-            if(m != null) delete [] m;
+            delete [] m;
             //oppure nullptr
         }
         void init(){
-            
+            for(int i = 0; i < dim; i++){
+                m[i] = i;
+            }
+        }
+        int& operator [] (const int pos) const {
+            if (pos < 0) return m[0];
+            if (pos > dim-1) return m[dim-1];
+            return m[pos];
         }
 };
 
