@@ -1,4 +1,5 @@
 #include <iostream>
+#include "persona.h"
 using namespace std;
 
 //al posoto di fare questo
@@ -16,4 +17,8 @@ int main() {
 
     float c = 3.14, d = 0.02;
     cout << massimo(c, d) << endl;
+
+    Persona p1("Gianni");
+    Persona p2("Elisa");
+    cout << massimo(p1, p2) << endl;
 } 
